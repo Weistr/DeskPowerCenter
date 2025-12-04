@@ -1,0 +1,4 @@
+[submodule "firmware/RCBO"]
+	path = firmware/RCBO
+	url = https://github.com/Weistr/Emcu_firmware.git
+	branch = RCBO
