@@ -1,0 +1,54 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "GD32E230",
+            "displayName": "GD32E230 Build Configuration",
+            "description": "Build configuration for GD32E230 target",
+            "generator": "MinGW Makefiles",
+            "binaryDir": "${sourceDir}/Target/GD32E230/Build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_MAKE_PROGRAM": "mingw32-make"
+            },
+            "environment": {
+                "PATH": "$penv{PATH}"
+            }
+        },
+        {
+            "name": "GD32F130",
+            "displayName": "GD32F130 Build Configuration",
+            "description": "Build configuration for GD32F130 target (example)",
+            "generator": "MinGW Makefiles",
+            "binaryDir": "${sourceDir}/Target/GD32F130/Build",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_MAKE_PROGRAM": "mingw32-make"
+            },
+            "environment": {
+                "PATH": "$penv{PATH}"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "GD32E230",
+            "configurePreset": "GD32E230",
+            "displayName": "Build GD32E230",
+            "description": "Build the GD32E230 target"
+        },
+        {
+            "name": "GD32F130",
+            "configurePreset": "GD32F130",
+            "displayName": "Build GD32F130",
+            "description": "Build the GD32F130 target (example)"
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "default",
+            "configurePreset": "GD32E230",
+            "description": "Default test preset"
+        }
+    ]
+}

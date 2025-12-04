@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "gd32f30x.h": "c",
+        "gd32f30x_gpio.h": "c",
+        "systick.h": "c",
+        "main.h": "c",
+        "system_gd32f30x.h": "c",
+        "gd32f30x_libopt.h": "c",
+        "timer.h": "c",
+        "gpio.h": "c",
+        "board.h": "c",
+        "gd32e23x.h": "c",
+        "f2837xs_device.h": "c"
+    },
+    "cortex-debug.openocdPath": "C:\\developer_tools\\EmbeddedBuilder_v1.4.1.23782\\EmbeddedBuilder_v1.4.1.23782\\Tools\\OpenOCD\\xpack-openocd-0.11.0-3\\bin\\openocd.exe"
+}

@@ -1,0 +1,78 @@
+
+{
+    "configurations": [
+        {
+            "name": "GD32F303",       
+            "includePath": [
+                "${workspaceFolder}/**"
+                
+            ],
+            /*见CMAKE*/
+            "defines": [
+                "USE_STDPERIPH_DRIVER",
+                "GD32F30X_HD"
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm"
+        },
+        {
+            "name": "GD32E230",       
+            "includePath": [
+                "C:/developer_tools/gcc_arm_none_eabi/lib/gcc/arm-none-eabi/9.2.1/include",//自己电脑的gccarm位置
+                "${workspaceFolder}/Lib/Src/Device/Mcu/GD32E230/Inc",
+                "${workspaceFolder}/Lib/Src/Device/Mcu/GD32E230/GD32E23x_Firmware_Library_V210/CMSIS",
+                "${workspaceFolder}/Lib/Src/Device/Mcu/GD32E230/GD32E23x_Firmware_Library_V210/CMSIS/GD/GD32E23x/Include", 
+                "${workspaceFolder}/Lib/Src/Device/Mcu/GD32E230/GD32E23x_Firmware_Library_V210/GD32E23x_standard_peripheral/Include",   
+                "${workspaceFolder}/Target/GD32E230/Src/**",
+                "${workspaceFolder}/Lib/Src/Device/LED/**",
+                "${workspaceFolder}/Lib/Src/Task/**",
+                "${workspaceFolder}/Lib/Src/Delay/**"
+
+
+            ],
+            /*见CMAKE*/
+            "defines": [
+                "GD32E230",
+                "GD32E23x"
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm"
+        },
+        {
+            "name": "TMS320F28062",       
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "__interrupt="//防报错
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm"               
+        },
+        {
+            "name": "TMS320F28377",       
+            "includePath": [
+                "${workspaceFolder}/userApp/Inc",
+                "${workspaceFolder}/Drivers/Mcu/TMS320F28377/Inc",
+                "C:/ti/ccs1280/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include"
+            ],
+            "defines": [
+                "__interrupt="//防报错
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm"               
+        }
+        
+    ],
+
+    
+    "version": 4
+}
